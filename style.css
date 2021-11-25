@@ -1,0 +1,91 @@
+
+body {
+    background-color: grey;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  -webkit-backface-visibility: hidden;
+  margin-top: -19.5px;
+  margin-left: -49px;
+  top: 50%;
+  left: 50%;
+  height: 39px;
+  width: 98px;
+  background-color: #8cd8e9;
+  position: absolute;
+  -webkit-transform: skewX(-35deg);
+  -ms-transform: skewX(-35deg);
+  -moz-transform: skewX(-35deg);
+  transition: all linear .2s;
+  border-radius: 4px;
+}
+
+label .switch {
+  transition: all linear .2s;
+  position: absolute;
+  height: 30px;
+  width: 25px;
+  background-color: white;
+  top: 4px;
+  left: 5px;
+  border-radius: 3px;
+  box-shadow: 2px 3px 10px 1px rgba(1, 1, 1, 0.5);
+}
+
+label span {
+  transition: all linear .2s;
+  position: absolute;
+  -webkit-transform: skewX(35deg);
+  -ms-transform: skewX(35deg);
+  -moz-transform: skewX(35deg);
+  color: #acacac;
+  top: 9px;
+  left: 43px;
+  font-size: 17px;
+  font-family: Helvetica, Arial;
+  font-weight: bold;
+}
+
+label .unchecked {
+  opacity: 100;
+}
+
+label .checked {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ label {
+  background-color: #97bd46;
+  -webkit-transform: skewX(35deg);
+  -ms-transform: skewX(35deg);
+  -moz-transform: skewX(35deg);
+}
+
+input[type="checkbox"]:checked ~ label .switch {
+  left: 68px;
+  box-shadow: -2px 3px 10px 1px rgba(1, 1, 1, 0.5);
+}
+
+input[type="checkbox"]:checked ~ label span {
+  position: absolute;
+  -webkit-transform: skewX(-35deg);
+  -ms-transform: skewX(-35deg);
+  -moz-transform: skewX(-35deg);
+  color: #ffffff;
+  left: 22px;
+}
+
+input[type="checkbox"]:checked ~ label .checked {
+  opacity: 100;
+}
+
+input[type="checkbox"]:checked ~ label .unchecked {
+  opacity: 0;
+}  
+
+
